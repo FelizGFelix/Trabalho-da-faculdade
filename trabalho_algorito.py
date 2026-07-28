@@ -68,7 +68,18 @@ def mostrar_funcionarios():
     dict_list = [dict(row) for row in cursor.fetchall()]
 
     for i in dict_list:
-        print("Nome:")
+        print("---------------------------------")
+        print("Nome: ", i["Nome"])
+        print("CPF: ", i["CPF"])
+        print("Crédito: ", i["Crédito"])
+        print("Endereço: ", i["Endereço"])
+        print("CEP: ", i["CEP"])
+        print("Cidade: ", i["Cidade"])
+        print("Estado: ", i["Estado"])
+        print("Cargo: ", i["Cargo"])
+
+    print("-------------------------------------")
+    input("Digite qualquer valor para retornar: ")
 
 
 def main():
