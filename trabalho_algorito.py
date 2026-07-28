@@ -64,7 +64,7 @@ def mostrar_funcionarios():
     banco = sqlite3.connect("hell_market_funcionarios.db")
     banco.row_factory = sqlite3.Row
     cursor = banco.cursor()
-    cursor.execute("SELECT * from hells_market")
+    cursor.execute("SELECT * from hells_market ORDER BY Nome")
     dict_list = [dict(row) for row in cursor.fetchall()]
 
     for i in dict_list:
