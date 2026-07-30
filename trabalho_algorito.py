@@ -156,6 +156,8 @@ def atualizar_cadastro():
 
     print("Atualização concluída!")
     input("Digite qualquer valor para retornar: ")
+
+    limpar()
     
     
 
